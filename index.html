@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="dashboard">
+
+        <!-- Mobile Overlay -->
+         <div class="mobile-overlay" id="mobileOverlay"></div>
+
+         <!--Header-->
+         <header class="header">
+            <div class="header-left">
+                <button class="mobile-toggle" id="menuToggle">
+                        <i class="fas fa-bars"></i>
+                </button>
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+            </div>
+
+            <div class="header-right">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="notificatoion">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-badge">3</span>
+                </div>
+                <div class="user-profile">
+                     <img src="assets/images/1.jpg" alt="User profile">
+                </div>
+            </div>
+            
+         </header>
+
+         <!-- sidebar -->
+          <aside class="sidebar" id="sidebar">
+            <div class="logo">
+                <i class="fas fa-code"></i>
+                <h1>CodeWithSammyKrin</h1>
+            </div>
+
+
+            <div class="nav-title">Main Menu</div>
+            <div class="nav-links">
+                <a href="#" class="nav-item active">
+                    <i class="fas fa-home"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-project-diagram"></i>
+                    <span>Project</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Calendar</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-users"></i>
+                    <span>Team</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-chart-pie"></i>
+                    <span>Reports</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-cog"></i>
+                    <span>Settings</span>
+                </a>
+            </div>
+
+
+            <div class="nav-title">Team members</div>
+            <div class="nav-links">
+                <div class="team-member">
+                    <img src="assets/images/2.jpeg" class="member-avatar">
+                    <span>Samuel Olamide</span>
+                </div>
+                <div class="team-member">
+                    <img src="assets/images/3.jpeg" class="member-avatar">
+                    <span>Akintomiwa</span>
+                </div>
+                <div class="team-member">
+                    <img src="assets/images/4.jpeg" class="member-avatar">
+                    <span>Samuel Olamide</span>
+                </div>
+                <div class="team-member">
+                    <img src="assets/images/5.jpeg" class="member-avatar">
+                    <span>Abisola Sangodare</span>
+                </div>
+                <div class="team-member">
+                    <img src="assets/images/6.jpeg" class="member-avatar">
+                    <span>Oluwatosin Ajayi</span>
+                </div>
+            </div>
+          </aside>
+
+          <!-- Main Content -->
+           <main class="content">
+            <!-- welcome-banner-->
+             <div class="welcome-banner">
+                <h1>Welcome back, Samuel</h1>
+                <p>You have 3 ongoing projects. 2 deadlines are apporaching this week</p>
+                <button class="btn btn-light">
+                    <i class="fas fa-plus"></i> Create New Project 
+                </button>
+             </div>
+             <!-- Profile cards-->
+              <div class="profile-card card">
+                <img src="assets/images/2.jpeg" class="profile-image" alt="User profile">
+                <div class="profile-info">
+                    <h2>Samuel Olamilehin</h2>
+                    <p>Project Manager</p>
+                <!-- </div> -->
+                    <div class="progress-ring">
+                        <svg class="progress-circle" width="100" height="100" viewBox=" 0 0 100 100">
+                            <circle class="progress-bg" cx="50" cy="50" r="45" />
+                            <circle class="progress-fill" cx="50" cy="50" r="45" />
+                        </svg>
+                        <div class="progress-text">75%</div>
+                        </div>
+                        </div>
+                        <div class="profile-stats">
+                            <div class="stat-item">
+                                <span class="stat-value">12</span>
+                                <span class="stat-label">projects</span>
+                            </div>
+                             <div class="stat-item">
+                                <span class="stat-value">24</span>
+                                <span class="stat-label">Task</span>
+                            </div>
+                             <div class="stat-item">
+                                <span class="stat-value">89%</span>
+                                <span class="stat-label">Success</span>
+                            </div>
+                    </div>
+                </div>
+              
+           </main>
+
+           
+           
+           <!-- footer -->
+            <footer class="footer"></footer>
+
+
+
+    </div>
+</body>
+<script src="assets/js/script.js"></script>
+</html>
