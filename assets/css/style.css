@@ -662,6 +662,78 @@ margin-top: -3rem;
 .priority-low { background-color: #06d6a0; }
 
 
+/*Stats Section*/
+.stats-section{
+    grid-area: stats;
+}
+
+.stats-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.stat-card{
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: tranform 0.3s ease;
+}
+.stat-card:hover{
+    transform: scale(1.03);
+}
+.stat-icon{
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Stat Icons*/
+.stat-icon.design{
+    background: rgba(72, 149, 239, 0.15);
+    color: var(--accent);
+}
+
+.stat-icon.development{
+    background: rgba(247, 37, 133, 0.15);
+    color: var(--warning);
+}
+
+.stat-icon.marketing{
+    background: rgba(76, 201, 240, 0.15);
+    color: var(--success);
+}
+
+.stat-value{
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label{
+    font-size: 0.95rem;
+    color: var(--gray);
+}
+
+/* Animation for stats*/
+@keyframes pulse{
+   0%{ transform: scale(1);}
+   50%{transform: scale(1.05);}
+   100%{transform: scale(1);} 
+}
+
+.stat-card:hover .stat-icon{
+    animation: pulse 1.5s infinite;
+}
+
+
 /*Footer Area*/
 .footer{
     grid-area: footer;
